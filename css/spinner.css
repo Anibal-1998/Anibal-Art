@@ -1,0 +1,1 @@
+@keyframes spinner{from{transform:rotate(0)}to{transform:rotate(180deg)}}#spinner{position:fixed;width:100px;height:100px;transition:.4s;z-index:10;animation:spinner 1.5s ease-in-out infinite normal;top:45%;left:calc(50% - 50px)}
