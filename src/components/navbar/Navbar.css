@@ -1,0 +1,28 @@
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 1rem;
+    padding: 8rem 13rem 8rem 13rem;
+    margin: 0 1.75% 6vw;
+    gap: 2vw;
+}
+
+.nav-links li{
+    margin-left: 1.25rem;
+}
+.nav-links a{
+    text-decoration: none;
+}
+.nav-link-on{
+    color: var(--onLink);
+}
+.nav-links a:hover{
+    color: var(--onLink);
+}
+
+.nav-brand{
+    margin-right: auto;
+    font-weight: bold;
+}
