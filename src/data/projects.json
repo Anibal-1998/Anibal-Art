@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "name": "NUDE PROJECT",
+        "description": "Campaign Design, Social Media Content, Merchandising",
+        "img": "/img/01_nude_project.png"
+    },
+    {
+        "id": 2,
+        "name": "TRÍPTICO FILM",
+        "description": "Social Media Content, Verkami Design, Merchandising, Making Off Content",
+        "img": "/img/02_triptico.png"
+    },
+    {
+        "id": 3,
+        "name": "KEEP UP EDITORIAL",
+        "description": "Branding",
+        "img": "/img/03_keep_up.png"
+    },
+    {
+        "id": 4,
+        "name": "CHROMA COVER",
+        "description": "Cover Mix",
+        "img": "/img/04_chroma.png"
+    },
+    {
+        "id": 5,
+        "name": "ARISTOCRAZY",
+        "description": "Campaign Design, Social Media Content, UI Web Design, Product Photography",
+        "img": "/img/05_aristocrazy.png"
+    },
+    {
+        "id": 6,
+        "name": "SHOOT TEE",
+        "description": "Creative Direction, Fashion Design, Set Design, Art Direction",
+        "img": "/img/shoot_tee.png"
+    },
+    {
+        "id": 7,
+        "name": "2121 MAGAZINE",
+        "description": "Branding",
+        "img": "/img/06_2121_magazine.png"
+    },
+    {
+        "id": 8,
+        "name": "UROBOROS",
+        "description": "Branding",
+        "img": "/img/07_uroboros.png"
+    },
+    {
+        "id": 9,
+        "name": "POSTER TOO BUSY TO HATE",
+        "description": "Poster Mix (Pt. 3)",
+        "img": "/img/08_poster_busy.png"
+    },
+    {
+        "id": 10,
+        "name": "NORTHDECO",
+        "description": "Social Media Content, Banner Web",
+        "img": "/img/09_northdeco.png"
+    },
+    {
+        "id": 11,
+        "name": "HALCON5 TEE",
+        "description": "Creative Direction, Fashion Design, Visuals",
+        "img": "/img/halcon5.png"
+    },
+    {
+        "id": 12,
+        "name": "ANGEL CAÍDO EDITORIAL",
+        "description": "Branding",
+        "img": "/img/10_angel_caido.png"
+    },
+    {
+        "id": 13,
+        "name": "POSTER CROWLFACE",
+        "description": "Poster Mix (Pt. 1)",
+        "img": "/img/11_poster_crowlface.png"
+    },
+    {
+        "id": 14,
+        "name": "LOGOFOLIO",
+        "description": "Logotypes 2022",
+        "img": "/img/12_logofolio.png"
+    }
+]

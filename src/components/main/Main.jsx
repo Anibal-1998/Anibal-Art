@@ -1,8 +1,14 @@
 import React from 'react'
-
-function Main() {
+// import projects from "../../data/projects"
+import WorkCard from './WorkCard/WorkCard'
+import "./Main.css"
+function Main ({ projects = [] }) {
   return (
-    <main>Main</main>
+    <main className='gallery'>
+        {projects.map((project)=>(
+          <WorkCard {...project} key={project.id} />
+        ))}
+    </main>
   )
 }
 

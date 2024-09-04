@@ -6,8 +6,8 @@ function Navbar() {
         <ul className='nav-links'>
             <li className='nav-brand'>ANIBAL R. CANELA</li>
             <li><a href="#" className='nav-link-on'>WORKS</a></li>
-            <li> <a href="#">SHOP</a></li>
-            <li> <a href="./bio">BIO</a></li>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="./bio">BIO</a></li>
         </ul>
     </nav>
   )

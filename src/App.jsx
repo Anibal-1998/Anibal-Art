@@ -6,7 +6,8 @@ Route
 import './App.css';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
-import Main from './components/main/Main';
+import WorkCardContainer from './components/main/WorkCardContainer/WorkCardContainer';
+import Bio from './components/bio/Bio';
 
 function App() {
 
@@ -14,9 +15,9 @@ function App() {
       <Router>
           <Navbar/>
           <Routes>
-              <Route path='/' element={<Main/>}/>
+              <Route path='/' element={<WorkCardContainer/>}/>
               <Route path='/shop' element={<></>}/>
-              <Route path='/bio' element={<></>}/>
+              <Route path='/bio' element={<Bio/>}/>
               <Route path='*' element={<Navigate to='/'/>}/>
           </Routes>
           <Footer/>
