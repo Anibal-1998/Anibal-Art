@@ -32,3 +32,19 @@
 .footer a:hover{
     color: var(--onLink);
 }
+
+@media screen and (max-width: 800px){
+    .footer{
+        flex-direction: column;
+    }
+    .footer-left{
+        padding: 2rem 0 2rem 0;
+        order: 2;
+    }
+    .footer-center{
+        order: 1;
+    }
+    .footer-right{
+        order: 3;
+    }   
+}

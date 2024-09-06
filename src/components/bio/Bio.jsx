@@ -29,7 +29,7 @@ function Bio() {
                 </div>
             </section>
             <section className='info-grid'>
-                <div class="info-column">
+                <div className="info-column">
                     <h3>Clients</h3>
                     <ul>
                         <li>
@@ -37,8 +37,6 @@ function Bio() {
                             <span>TheBits</span>
                             <span>Lemon Printers</span>
                         </li>
-                        {/* <li></li>
-                        <li></li> */}
                     </ul>
                     <ul>
                         <li>
@@ -58,7 +56,7 @@ function Bio() {
                         <span>+ MORE</span>
                     </ul>
                 </div>
-                <div class="info-column">
+                <div className="info-column">
                     <h3>Experience</h3>
                     <ul>
                         <li>
@@ -83,7 +81,7 @@ function Bio() {
                         </li>
                     </ul>
                 </div>
-                <div class="info-column">
+                <div className="info-column">
                     <h3>Study</h3>
                     <ul>
                         <li>

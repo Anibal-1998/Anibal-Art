@@ -3,84 +3,98 @@
         "id": 1,
         "name": "NUDE PROJECT",
         "description": "Campaign Design, Social Media Content, Merchandising",
-        "img": "/img/01_nude_project.png"
+        "img": "/img/01_nude_project.png",
+        "href": "/nudeproject"
     },
     {
         "id": 2,
         "name": "TRÍPTICO FILM",
         "description": "Social Media Content, Verkami Design, Merchandising, Making Off Content",
-        "img": "/img/02_triptico.png"
+        "img": "/img/02_triptico.png",
+        "href": "/triptico"
     },
     {
         "id": 3,
         "name": "KEEP UP EDITORIAL",
         "description": "Branding",
-        "img": "/img/03_keep_up.png"
+        "img": "/img/03_keep_up.png",
+        "href": "https://www.behance.net/gallery/87016833/Keep-Up-Editorial-Branding"
     },
     {
         "id": 4,
         "name": "CHROMA COVER",
         "description": "Cover Mix",
-        "img": "/img/04_chroma.png"
+        "img": "/img/04_chroma.png",
+        "href": "https://www.behance.net/gallery/149449825/Cover-Mix-2020-2022"
     },
     {
         "id": 5,
         "name": "ARISTOCRAZY",
         "description": "Campaign Design, Social Media Content, UI Web Design, Product Photography",
-        "img": "/img/05_aristocrazy.png"
+        "img": "/img/05_aristocrazy.png",
+        "href": "https://www.behance.net/gallery/149786497/SAVAGE-Aristocrazy-by-Anibal-Rodriguez"
     },
     {
         "id": 6,
         "name": "SHOOT TEE",
         "description": "Creative Direction, Fashion Design, Set Design, Art Direction",
-        "img": "/img/shoot_tee.png"
+        "img": "/img/shoot_tee.png",
+        "href": "https://www.instagram.com/p/CmmpYfhshLM/"
     },
     {
         "id": 7,
         "name": "2121 MAGAZINE",
         "description": "Branding",
-        "img": "/img/06_2121_magazine.png"
+        "img": "/img/06_2121_magazine.png",
+        "href": "https://www.behance.net/gallery/92472129/2121-Magazine-Branding"
     },
     {
         "id": 8,
         "name": "UROBOROS",
         "description": "Branding",
-        "img": "/img/07_uroboros.png"
+        "img": "/img/07_uroboros.png",
+        "href": "https://www.behance.net/gallery/86197777/UROBOROS-%28ROL-GAME%29-Branding-Brand-Concept"
     },
     {
         "id": 9,
         "name": "POSTER TOO BUSY TO HATE",
         "description": "Poster Mix (Pt. 3)",
-        "img": "/img/08_poster_busy.png"
+        "img": "/img/08_poster_busy.png",
+        "href": "https://www.behance.net/gallery/150054043/Poster-Mix-2020-2022-Pt-3"
     },
     {
         "id": 10,
         "name": "NORTHDECO",
         "description": "Social Media Content, Banner Web",
-        "img": "/img/09_northdeco.png"
+        "img": "/img/09_northdeco.png",
+        "href": "/northdeco"
     },
     {
         "id": 11,
         "name": "HALCON5 TEE",
         "description": "Creative Direction, Fashion Design, Visuals",
-        "img": "/img/halcon5.png"
+        "img": "/img/halcon5.png",
+        "href": "https://www.instagram.com/p/CnpfVk5sO0z/"
     },
     {
         "id": 12,
         "name": "ANGEL CAÍDO EDITORIAL",
         "description": "Branding",
-        "img": "/img/10_angel_caido.png"
+        "img": "/img/10_angel_caido.png",
+        "href": "https://www.behance.net/gallery/91422367/Angel-Caido-Editorial-Branding"
     },
     {
         "id": 13,
         "name": "POSTER CROWLFACE",
         "description": "Poster Mix (Pt. 1)",
-        "img": "/img/11_poster_crowlface.png"
+        "img": "/img/11_poster_crowlface.png",
+        "href": "https://www.behance.net/gallery/149334575/Poster-Mix-2019-2022"
     },
     {
         "id": 14,
         "name": "LOGOFOLIO",
         "description": "Logotypes 2022",
-        "img": "/img/12_logofolio.png"
+        "img": "/img/12_logofolio.png",
+        "href": "https://www.behance.net/gallery/149379635/Logofolio-2019-2022"
     }
 ]

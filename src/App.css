@@ -1,6 +1,7 @@
 @import "https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap";
 * {
     --onLink: #f55314;
+    --alturaMain: 140vw;
     color: rgb(20, 20, 20);
     font-family: roboto, sans-serif;
     background-color: whitesmoke;

@@ -5,7 +5,6 @@
 }
 
 .bio p{
-    /* width: 50vh; */
     padding: 0 5rem 0 5rem;
 }
 .writing{
@@ -13,7 +12,9 @@
     flex-direction: row;
     justify-content: space-between;
 }
-
+.writing p{
+    font-size: 1.2rem;
+}
 .info-grid{
     display: flex;
     justify-content: space-between;
@@ -62,4 +63,21 @@ p {
 
 strong {
     font-weight: bold;
+}
+
+@media screen and (max-width: 800px){
+    .bio{
+        gap: 0px;
+    }
+    .writing{
+        flex-direction: column;
+    }
+    .info-grid{
+        flex-direction: column;
+        justify-content: center;
+        gap: 0;
+    }
+    .writing p{
+        font-size: 1rem;
+    }
 }
