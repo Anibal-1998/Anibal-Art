@@ -1,8 +1,20 @@
 @import "https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap";
 * {
     --onLink: #f55314;
-    --alturaMain: 140vw;
+    --alturaMain: 100vw;
     color: rgb(20, 20, 20);
     font-family: roboto, sans-serif;
     background-color: whitesmoke;
+}
+.on-link{
+    color: var(--onLink);
+    text-decoration: none;
+}
+.on-link-with-hover{
+    color: black;
+    text-decoration: none;
+}
+
+.on-link-with-hover:hover{
+    color: var(--onLink);
 }

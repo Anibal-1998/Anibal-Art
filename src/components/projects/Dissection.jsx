@@ -1,0 +1,57 @@
+import React from 'react'
+import "./Dissection.css"
+
+function Dissection (){
+  return (
+    <>
+        <main className='landing-container'>
+            <div class="img img1">
+                {/* <img src="/img/dissection/webp72ppp/1.webp" alt="Image 1"/> */}
+                <img src="/img/dissection/jpg150ppp/1.jpg" alt="Image 1" />
+            </div>
+            <div class="img img2">
+                {/* <img src="/img/dissection/webp72ppp/2.webp" alt="Image 2"/> */}
+                <img src="/img/dissection/jpg150ppp/2.jpg" alt="Image 2" />
+            </div>
+            <div class="img img3">
+                {/* <img src="/img/dissection/webp72ppp/3.webp" alt="Image 3"/> */}
+                <img src="/img/dissection/jpg150ppp/3.jpg" alt="Image 3" />
+            </div>
+            <div class="img img4">
+                {/* <img src="/img/dissection/webp72ppp/4.webp" alt="Image 4"/> */}
+                <img src="/img/dissection/jpg150ppp/4.jpg" alt="Image 4" />
+            </div>
+            <div class="img img5">
+                {/* <img src="/img/dissection/webp72ppp/5.webp" alt="Image 5"/> */}
+                <img src="/img/dissection/jpg150ppp/5.jpg" alt="Image 5" />
+            </div>
+            <div class="img img6_7">
+                {/* <img src="/img/dissection/webp72ppp/6_7.webp" alt="Image 6"/> */}
+                <img src="/img/dissection/jpg150ppp/6_7.png" alt="Image 6_7" />
+            </div>
+            <div class="img img8">
+                {/* <img src="/img/dissection/webp72ppp/8.webp" alt="Image 7"/> */}
+                <img src="/img/dissection/jpg150ppp/8.jpg" alt="Image 8" />
+            </div>
+            <div class="img img9_10">
+                {/* <img src="/img/dissection/webp72ppp/9_10.webp" alt="Image 8"/> */}
+                <img src="/img/dissection/jpg150ppp/9_10.png" alt="Image 9_10" />
+            </div>
+            <div class="img img11">
+                {/* <img src="/img/dissection/webp72ppp/11.webp" alt="Image 9"/> */}
+                <img src="/img/dissection/jpg150ppp/11.jpg" alt="Image 11" />
+            </div>
+            <div class="img img12">
+                {/* <img src="/img/dissection/webp72ppp/12.webp" alt="Image 10"/> */}
+                <img src="/img/dissection/jpg150ppp/12.jpg" alt="Image 12" />
+            </div>
+            <div class="img img13">
+                {/* <img src="/img/dissection/webp72ppp/13.webp" alt="Image 11"/> */}
+                <img src="/img/dissection/jpg150ppp/13.jpg" alt="Image 13" />
+            </div>
+        </main>
+    </>
+  )
+}
+
+export default Dissection;

@@ -8,6 +8,7 @@ import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import WorkCardContainer from './components/main/WorkCardContainer/WorkCardContainer';
 import Bio from './components/bio/Bio';
+import Dissection from './components/projects/Dissection';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
               <Route path='/' element={<WorkCardContainer/>}/>
               <Route path='/shop' element={<></>}/>
               <Route path='/bio' element={<Bio/>}/>
+              <Route path='/dissection' element={<Dissection/>}/>
               <Route path='*' element={<Navigate to='/'/>}/>
           </Routes>
           <Footer/>

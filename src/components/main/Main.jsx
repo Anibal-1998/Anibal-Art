@@ -4,12 +4,14 @@ import WorkCard from './WorkCard/WorkCard'
 import "./Main.css"
 function Main ({ projects = [] }) {
   const [loading, setLoading] = useState(false);
-  useEffect(() => {
+
+  useEffect(() => { 
     setLoading(true);
-    setTimeout(() => {
+    const interval = setInterval(() => {
       setLoading(false);
     }, 1000);
-  }, [setLoading])
+    return () => clearInterval(interval);
+  }, [])
   return (
     <>
     {

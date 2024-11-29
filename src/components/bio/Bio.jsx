@@ -3,105 +3,68 @@ import "./Bio.css"
 function Bio() {
     return (
         <main className='bio'>
-            <section className='writing'>
-                <div>
-                    <p>
-                        ES - Me encanta mucho el dise&ntilde;o, la comunicación y el <strong>arte</strong>.
-                        Mis estudios y mi experiencia me centran en el &aacute;mbito del <strong>dise&ntilde;o gr&aacute;fico, </strong>
-                        soy un creativo ilusionado, con objetivos claros, gran constancia y ambici&oacute;n.
-                    </p>
-                    <p>
-                        De ah&iacute;, mi facilidad de adaptaci&oacute; al proyecto que se me ponga en frente y dar
-                        el <strong>100%</strong>. Con muchas ganas y buena actitud de mejorar tanto a nivel personal como profesional.
-                    </p>
-                </div>
-                <div>
-                    <p>
-                        EN - I love the world of design, communinacation and <strong>art</strong>.
-                        My studies and my experience focus me in the field of <strong>graphic design</strong>,
-                        I am an excited creative, with clear objectives, great <strong>constancy</strong> and
-                        <strong> ambition</strong>.
-                    </p>
-                    <p>
-                        Hence, my ease of adaptation to the project that is put in front of me and give <strong>100%</strong>.
-                        With great desire and good attitude to improve both personally and professionally.
-                    </p>
-                </div>
-            </section>
-            <section className='info-grid'>
+
                 <div className="info-column">
-                    <h3>Clients</h3>
-                    <ul>
-                        <li>
-                            <strong>Agencies & Studios</strong>
-                            <span>TheBits</span>
-                            <span>Lemon Printers</span>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <strong>Media & Publishers</strong>
-                            <span>Smartbranding</span>
-                            <span>Techbox</span>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <strong>Music Industry</strong>
-                            <span>Saint Cardona</span>
-                            <span>Seyka</span>
-                            <span>Cloud Musix</span>
-                            <span>Albert Freixas</span>
-                        </li>
-                        <span>+ MORE</span>
-                    </ul>
+                    <h3>About</h3>
+                    <div>
+                        <p>
+                            Designer by day. Philosopher by night. Anibal Rodriguez I Canela is a multidisciplinary designer based in <a href="#" className='on-link'>Barcelona, Spain</a>. 
+                            Currently working as a Designer at <a href="https://fakegodsbrand.com/" className='on-link'  target='_blank'>Fake Gods Brand</a>, previously at <a href="https://nude-project.com/es" className='on-link' target='_blank'>Nude Project</a>.
+                        </p>
+                        <p>
+                            Main focused in Graphic Design for Fashion, Product Design & Development, Conceptualization, Campaign Creation, and Communication Strategies for Brands and Projects, including Branding & Consulting services.
+                        </p>
+                        <p>
+                            In every work & project, the visual language and the concept trends to be expressive and push the limits, based in pure creativity, mixed with rooted references of culture and life experiences.
+                        </p>
+                    </div>
                 </div>
-                <div className="info-column">
-                    <h3>Experience</h3>
-                    <ul>
-                        <li>
-                            <strong>Graphic Designer & Creative</strong>
-                            <span>Freelance</span>
-                            <span>2019 / Present</span>
-                        </li>
-                        <li>
-                            <strong>Designer & Printer</strong>
-                            <span>Lemon Printers</span>
-                            <span>2018 / 2019</span>
-                        </li>
-                        <li>
-                            <strong>Copywriter & Content Creator</strong>
-                            <span>Techbox.es</span>
-                            <span>2018</span>
-                        </li>
-                        <li>
-                            <strong>Marketing & Designer Intern</strong>
-                            <span>MicrodigiT Informática S.L.</span>
-                            <span>2016 / 2017</span>
-                        </li>
-                    </ul>
-                </div>
-                <div className="info-column">
-                    <h3>Study</h3>
-                    <ul>
-                        <li>
-                            <strong>Graphic Product Design</strong>
-                            <span>CFIO L'Hospitalet</span>
-                            <span>2019 / 2020</span>
-                        </li>
-                        <li>
-                            <strong>Design & Graphic Art Production</strong>
-                            <span>Escola del Treball de Barcelona</span>
-                            <span>2017 / 2019</span>
-                        </li>
-                        <li>
-                            <strong>Digital Prepress</strong>
-                            <span>Escola del Treball de Barcelona</span>
-                            <span>2015 / 2017</span>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+
+                    <div className="info-column">
+                        <h3>Experience</h3>
+                        <ul>
+                            <li>
+                                <strong>Product & Graphic Design</strong>
+                                <span><a href="https://fakegodsbrand.com/" className='on-link-with-hover'>Fake Gods Brand</a></span>
+                                <span>May 2023 - Now</span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <strong>Product & Graphic Design</strong>
+                                <span><a href="https://nude-project.com/" className='on-link-with-hover'>Nude Project</a></span>
+                                <span>May 2023 - Mar 2023</span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <strong>Graphic Design Intern</strong>
+                                <span><a href="https://lemon.cat/" className='on-link-with-hover'>Lemon Printers</a></span>
+                                <span>Sept 2018 - Feb 2019</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="info-column">
+                        <h3>Study</h3>
+                        <ul>
+                            <li>
+                                <strong>Graphic Product Design</strong>
+                                <span><a href='https://www.google.es/maps/place/Instituto+Escuela+del+Trabajo+de+Barcelona/@41.3890051,2.145033,17z/data=!3m1!4b1!4m6!3m5!1s0x12a4a2847eeed3b5:0xfcbfd60966182d80!8m2!3d41.3890011!4d2.1476079!16s%2Fg%2F122y4vzh?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D' className="on-link-with-hover">CFIO L'Hospitalet</a></span>
+                                <span>2019 / 2020</span>
+                            </li>
+                            <li>
+                                <strong>Design & Graphic Art Production</strong>
+                                <span><a href='https://www.google.es/maps/place/Instituto+Escuela+del+Trabajo+de+Barcelona/@41.3890051,2.145033,17z/data=!3m1!4b1!4m6!3m5!1s0x12a4a2847eeed3b5:0xfcbfd60966182d80!8m2!3d41.3890011!4d2.1476079!16s%2Fg%2F122y4vzh?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D' className="on-link-with-hover">Escola del Treball de Barcelona</a></span>
+                                <span>2017 / 2019</span>
+                            </li>
+                            <li>
+                                <strong>Digital Prepress</strong>
+                                <span><a href='https://www.google.es/maps/place/Instituto+Escuela+del+Trabajo+de+Barcelona/@41.3890051,2.145033,17z/data=!3m1!4b1!4m6!3m5!1s0x12a4a2847eeed3b5:0xfcbfd60966182d80!8m2!3d41.3890011!4d2.1476079!16s%2Fg%2F122y4vzh?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D' className="on-link-with-hover">Escola del Treball de Barcelona</a></span>
+                                <span>2015 / 2017</span>
+                            </li>
+                        </ul>
+                    </div>
+
         </main>
     )
 }

@@ -4,10 +4,10 @@ function WorkCard({id, name, img, description, href}) {
   return (
     <div className='galleryelement' id={id}>
         <a href={href} target='_blank'>
-            <div className='description'>
+            {/* <div className='description'>
                 <h3>{name}</h3>
                 <p>{description}</p>
-            </div>
+            </div> */}
             <img src={img} alt={name} />
         </a>
     </div>

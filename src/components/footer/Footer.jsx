@@ -1,22 +1,34 @@
-import React from 'react'
-import { FaLinkedin, FaBehance  } from 'react-icons/fa'
-import { FaInstagram } from "react-icons/fa6";
-import { IoMdMail } from "react-icons/io";
+import React, {useState, useEffect} from 'react'
 import "./Footer.css"
 function Footer() {
+
+  const [hour, setHour] = useState(new Date());
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setHour(new Date());
+    }, 1000);
+  
+    return () => clearInterval(interval);
+  }, [])
+  const hourNow = hour.toLocaleTimeString();
+
   return (
     <footer className='footer'>
         <div className="footer-left">
-            &copy; 2024 ANIBAL R. CANELA
+          <p>&copy;1998 - Present </p>
+          <p>All Rights Reserved</p>
         </div>
         <div className="footer-center">
-            <a href="#"><IoMdMail/></a>
-            <a href="#"><FaLinkedin/></a>
-            <a href="#"><FaBehance/></a>
-            <a href="#"><FaInstagram/></a>
+          <p><a href="#">Instagram</a></p>
+          <p><a href="#">Linkedin</a></p>
+        </div>
+        <div className="footer-center">
+          <p> Don't waste </p>
+          <p>time {hourNow}</p>
         </div>
         <div className="footer-right">
-            Web design by <a href="https://">Diego Aguero</a>
+          <p>Web design </p>
+          <p>by <a href="https://www.linkedin.com/in/d-aguero/">Diego Aguero</a></p>
         </div>
     </footer>
   )

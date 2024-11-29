@@ -4,9 +4,10 @@
     align-items: center;
     list-style: none;
     font-size: 1rem;
-    padding: 8rem 13rem 0rem 13rem;
-    margin: 0 1.75% 6vw;
+    padding: 8rem 13rem 0rem 10.2rem;
+    margin: 0 1.75% 4vw;
     gap: 2vw;
+    overflow: hidden !important;
 }
 
 .nav-links li{
@@ -23,15 +24,19 @@
 }
 
 .nav-brand{
+    /* margin-right: 3rem; */
+    /* Mover mas a la izquierda */
     margin-right: auto;
     font-weight: bold;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 768px){
     .nav-links{
         gap: 1vw;
         justify-content: center;
         padding: 4rem 6rem 0rem 6rem;
-        margin: 0 1.75% 3vw;
+        margin: 0 1.75% 1vw;
+        overflow: hidden;
+
     }
 }
