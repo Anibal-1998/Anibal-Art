@@ -79,8 +79,6 @@ strong {
     h3{
         text-align: center;
     }
-    /* About primero */
-    /* Estudio y experiencia en 2 columnas */
     .info-column:nth-child(1){
         order: -1 !important;
         padding: 0;

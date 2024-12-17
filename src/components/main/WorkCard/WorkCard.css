@@ -28,12 +28,6 @@
     line-height: 1.5rem
 }
 
-/* @media (hover: hover) and (pointer: fine) {
-    main div:hover .description {
-      opacity: initial;
-    }
-} */
-
 @keyframes imageScaleAnimation{
     0%{
         -webkit-transform: scale(1);

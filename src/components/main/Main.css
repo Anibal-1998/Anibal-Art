@@ -1,11 +1,3 @@
-/* .gallery{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 4vw;
-    min-height: calc(--alturaMain - 8rem);
-} */
 .gallery {
   display: grid;
   gap: 1rem; /* Espacio entre elementos */
