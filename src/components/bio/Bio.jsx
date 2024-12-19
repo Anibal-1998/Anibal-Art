@@ -2,14 +2,13 @@ import React from 'react'
 import "./Bio.css"
 function Bio() {
     return (
-        <main className='bio'>
-
-                <div className="info-column">
+        <main class='bio'>
+                <div class="info-column">
                     <h3>About</h3>
                     <div>
                         <p>
-                            Designer by day. Philosopher by night. Anibal Rodriguez I Canela is a multidisciplinary designer based in <a href="#" className='on-link'>Barcelona, Spain</a>. 
-                            Currently working as a Designer at <a href="https://fakegodsbrand.com/" className='on-link'  target='_blank'>Fake Gods Brand</a>, previously at <a href="https://nude-project.com/es" className='on-link' target='_blank'>Nude Project</a>.
+                            Designer by day. Philosopher by night. Anibal Rodriguez I Canela is a multidisciplinary designer based in <a href="#" class='on-link'>Barcelona, Spain</a>. 
+                            Currently working as a Designer at <a href="https://fakegodsbrand.com/" class='on-link'  target='_blank'>Fake Gods Brand</a>, previously at <a href="https://nude-project.com/es" class='on-link' target='_blank'>Nude Project</a>.
                         </p>
                         <p>
                             Main focused in Graphic Design for Fashion, Product Design & Development, Conceptualization, Campaign Creation, and Communication Strategies for Brands and Projects, including Branding & Consulting services.
@@ -20,31 +19,31 @@ function Bio() {
                     </div>
                 </div>
 
-                    <div className="info-column">
+                    <div class="info-column">
                         <h3>Experience</h3>
                         <ul>
                             <li>
                                 <strong>Product & Graphic Design</strong>
-                                <span><a href="https://fakegodsbrand.com/" className='on-link-with-hover'>Fake Gods Brand</a></span>
+                                <span><a href="https://fakegodsbrand.com/" class='on-link-with-hover'>Fake Gods Brand</a></span>
                                 <span>May 2023 - Now</span>
                             </li>
                         </ul>
                         <ul>
                             <li>
                                 <strong>Product & Graphic Design</strong>
-                                <span><a href="https://nude-project.com/" className='on-link-with-hover'>Nude Project</a></span>
+                                <span><a href="https://nude-project.com/" class='on-link-with-hover'>Nude Project</a></span>
                                 <span>May 2023 - Mar 2023</span>
                             </li>
                         </ul>
                         <ul>
                             <li>
                                 <strong>Graphic Design Intern</strong>
-                                <span><a href="https://lemon.cat/" className='on-link-with-hover'>Lemon Printers</a></span>
+                                <span><a href="https://lemon.cat/" class='on-link-with-hover'>Lemon Printers</a></span>
                                 <span>Sept 2018 - Feb 2019</span>
                             </li>
                         </ul>
                     </div>
-                    <div className="info-column">
+                    <div class="info-column">
                         <h3>Study</h3>
                         <ul>
                             <li>

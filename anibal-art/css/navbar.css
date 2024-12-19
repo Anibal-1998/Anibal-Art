@@ -1,0 +1,54 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap";
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 1rem;
+    padding: 8rem 13rem 0rem 10.2rem;
+    margin: 0 1.75% 4vw;
+    gap: 2vw;
+    overflow: hidden !important;
+}
+.nav-links li{
+    margin-left: 1.25rem;
+}
+.nav-links a{
+    text-decoration: none;
+}
+.nav-link-on{
+    color: var(--onLink);
+}
+.nav-links a:hover{
+    color: var(--onLink);
+}
+
+.nav-brand{
+    /* margin-right: 3rem; */
+    /* Mover mas a la izquierda */
+    margin-right: auto;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px){
+    .nav-links{
+        gap: 1vw;
+        justify-content: center;
+        padding: 4rem 6rem 4rem 6rem;
+        margin: 0 1.75% 1vw;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 480px){
+    .mobile{
+        display: none;
+    }
+    .nav-links{
+        margin: 0 1.75%;
+    }
+    .nav-links li{
+        margin: 0;
+    }
+
+}
