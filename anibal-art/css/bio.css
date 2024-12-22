@@ -76,7 +76,7 @@ strong {
         flex-direction: column;
         justify-content: center;
         /* Descomentar esta linea y mostrarlo al Anibal */
-        /* align-items: center; */
+        text-align: center;
         gap: 0;
         margin: 5rem;
     }
