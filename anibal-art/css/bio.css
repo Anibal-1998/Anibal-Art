@@ -75,7 +75,6 @@ strong {
     .bio{
         flex-direction: column;
         justify-content: center;
-        /* Descomentar esta linea y mostrarlo al Anibal */
         text-align: center;
         gap: 0;
         margin: 5rem;

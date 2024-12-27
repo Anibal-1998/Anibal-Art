@@ -1,6 +1,6 @@
 main{
     padding-top: 3rem;
-    margin: 13rem;
+    margin: 5%;
 }
 
 main img, main video{
@@ -15,11 +15,13 @@ main img:last-of-type {
 @media screen and (max-width: 768px){
     main{
         padding-top: 0;
+        margin: 0;
     }
 }
 
 @media screen and (max-width: 480px){
     main{
         padding-top: 0;
+        margin: 0;
     }
 }

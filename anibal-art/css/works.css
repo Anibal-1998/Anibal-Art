@@ -31,8 +31,8 @@
 }
 .gallery {
   display: grid;
-  gap: 1rem; /* Espacio entre elementos */
-  grid-template-columns: repeat(4, 1fr); /* 4 columnas en pantallas grandes */
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
   margin-bottom: 4vw;
   min-height: 100%;
 }
