@@ -20,6 +20,7 @@
     flex-grow: 1; 
     flex-basis: 0;
     padding-left: 10rem;
+    margin-bottom: 14%;
 }
 .info-column:nth-child(2){
     order: 1;
@@ -27,7 +28,7 @@
     flex-basis: 0; 
     font-size: 1rem;
     padding-left: 13.3rem;
-    padding-right: 5rem;
+    padding-right: 1rem;
 }
 
 h3 {
@@ -61,9 +62,8 @@ li span {
     color: #555;
 }
 
-p{
+.info-column > p{
     font-size: 1.2rem;
-    padding: 0;
 }
 
 strong {
@@ -77,7 +77,7 @@ strong {
         justify-content: center;
         text-align: center;
         gap: 0;
-        margin: 5rem;
+        margin: 0% 10% 0% 10%;
     }
     h3{
         text-align: center;
@@ -94,6 +94,7 @@ strong {
     .info-column:nth-child(3){
         order: 1;
         padding: 0;
+        margin-bottom: 0;
     }
 
 

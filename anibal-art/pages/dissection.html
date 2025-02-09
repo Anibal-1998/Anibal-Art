@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
     <link rel="icon" type="image/svg+xml" href="/public/img/web-ico-logo.png" />
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/footer.css">
@@ -14,8 +14,8 @@
     <nav class="nav">
         <ul class='nav-links'>
             <li class='nav-brand'><a href="../index.html">ANIBAL R. CANELA</a></li>
-            <li><a href="../index.html" class="mobile" target="_blank">WORKS</a></li>
-            <li><a href="./pages/about.html" class="mobile" target="_blank">ABOUT</a></li>
+            <li><a href="../index.html">WORKS</a></li>
+            <li><a href="./pages/about.html">ABOUT</a></li>
         </ul>
     </nav>
     <main class='landing-container'>
@@ -53,6 +53,15 @@
             <img src="../public/img/dissection/jpg150ppp/13.jpg" alt="Image 13" />
         </div>
     </main>
+    
+    <!-- Modal para pasar de imagen -->
+    <div class="modal" id="modal">
+        <span class="close" id="close">&times;</span>
+        <span class="prev" id="prev">&#10094;</span>
+        <img id="modalImage" src="" alt="Imagen Modal">
+        <span class="next" id="next">&#10095;</span>
+    </div>
+
     <footer class='footer'>
         <div class="footer-left">
           <p>&copy;1998 - Present </p>
@@ -72,5 +81,8 @@
         </div>
     </footer>
     <script src="../js/dontwastetime.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/carouselDissection.js"></script>
+    
 </body>
 </html>

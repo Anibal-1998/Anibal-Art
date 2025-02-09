@@ -1,0 +1,4 @@
+Redirect /portfolio /img/portfolioAnibalRodriguez.pdf
+php_value upload_max_filesize 350M
+php_value post_max_size 350M
+php_value memory_limit 512M

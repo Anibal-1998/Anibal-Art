@@ -6,13 +6,12 @@
     align-items: center;
     list-style: none;
     font-size: 1rem;
-    padding: 8rem 13rem 0rem 10.2rem;
+    padding: 6% 11% 0 10%;
     margin: 0 1.75% 4vw;
     gap: 2vw;
-    overflow: hidden !important;
 }
 .nav-links li{
-    margin-left: 1.25rem;
+    margin-left: 2%;
 }
 .nav-links a{
     text-decoration: none;
@@ -33,19 +32,18 @@
     .nav-links{
         gap: 1vw;
         justify-content: center;
-        padding: 4rem 6rem 4rem 6rem;
+        padding: 10% 6%;
         margin: 0 1.75% 1vw;
         overflow: hidden;
     }
 }
 @media screen and (max-width: 480px){
-    .mobile{
-        display: none;
-    }
     .nav-links{
         margin: 0 1.75%;
+        justify-content: space-evenly;
     }
     .nav-links li{
+        text-align: center;
         margin: 0;
     }
 

@@ -1,11 +1,11 @@
 main{
     padding-top: 3rem;
-    margin: 5%;
+    margin: 5% 18% 5% 18%;
 }
 
 main img, main video{
     width: 100%;
-    margin-bottom: 4.4rem;
+    margin-bottom: 2%;
 }
 
 main img:last-of-type {

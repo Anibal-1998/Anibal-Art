@@ -6,8 +6,7 @@
 }
 .galleryelement img{
     max-width: 100%;
-    height: 100%;
-    aspect-ratio: auto;
+    height: auto;
     transition: transform 0.3s; 
 }
 .galleryelement a{
@@ -31,7 +30,7 @@
 }
 .gallery {
   display: grid;
-  gap: 1rem;
+  gap: 2%;
   grid-template-columns: repeat(4, 1fr);
   margin-bottom: 4vw;
   min-height: 100%;
@@ -43,27 +42,6 @@
   margin: 6vw 11vw;
   min-height: 35vh;
 }
-.spinner{
-  position: fixed;
-  width: 100px;
-  height: 100px;
-  transition: 0.4s;
-  z-index: 10;
-  animation: spinner 1s linear infinite;
-  top: 45%;
-  left: calc(50% - 50px);
-  will-change: transform;
-}
-
-@keyframes spinner {
-    from {
-      transform: rotate(0);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-}
-  
 
 @keyframes imageScaleAnimation{
     0%{
@@ -93,9 +71,8 @@
       width: 100%;
     }
     .wrapper {
-      margin: 0 auto; 
-      padding: 0;
-      width: 100%; 
+      margin: 0; 
+      width: 98%; 
   }
 }
   
@@ -104,11 +81,7 @@
     overflow: hidden !important;
   }
   .galleryelement{
-    width: 100%;
+    width: 99%;
   }
-  .wrapper{
-    margin: 0 auto; 
-    padding: 0;
-    width: 100%; 
-  }
+
 }
