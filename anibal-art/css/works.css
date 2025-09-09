@@ -7,14 +7,14 @@
 .galleryelement img{
     max-width: 100%;
     height: auto;
-    transition: transform 0.3s; 
+    /* transition: transform 0.3s;  */
 }
 .galleryelement a{
     max-width: 100%;
 }
-.galleryelement:hover img{
+/* .galleryelement:hover img{
     transform: scale(1.1); 
-}
+} */
 .description p, h3{
     color: whitesmoke; 
     background-color: transparent;
@@ -30,45 +30,36 @@
 }
 .gallery {
   display: grid;
-  gap: 2%;
+  /* gap: 2%; */
   grid-template-columns: repeat(4, 1fr);
   margin-bottom: 4vw;
   min-height: 100%;
 }
 .gallery .galleryelement{
-  padding: 0.7rem;
+    padding: 0.7rem;
 }
 .wrapper{
-  margin: 6vw 11vw;
-  min-height: 35vh;
+    /* margin: ; */
+    min-height: 35vh;
 }
-
-@keyframes imageScaleAnimation{
-    0%{
-        -webkit-transform: scale(1);
-        -moz-transform: scale(1);
-        -o-transform: scale(1);
-        -ms-transform: scale(1);
-        transform: scale(1);
-    }
-    100%{
-        -webkit-transform: scale(1.1);
-        -moz-transform: scale(1.1);
-        -o-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1);
-    }
+.text-above-image{
+  color: rgb(114, 113, 113);
+  margin: 0;
+  font-size: 0.8rem;
 }
-
+.galleryelement > p.text-above-image:last-of-type{
+  margin-bottom: 1.2rem;
+}
 @media screen and (max-width: 768px){
     .gallery{
       grid-template-columns: repeat(2, 1fr);
       width: 100%;
       overflow: hidden !important;
+      /* gap */
       margin: 0 auto;
     }
     .galleryelement{
-      width: 100%;
+      width: 95%;
     }
     .wrapper {
       margin: 0; 
@@ -78,6 +69,7 @@
   
 @media screen and (max-width: 480px){
   .gallery{
+    gap: 0.5rem;
     overflow: hidden !important;
   }
   .galleryelement{

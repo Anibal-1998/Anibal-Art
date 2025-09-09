@@ -1,0 +1,69 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap";
+.nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 1rem;    
+    padding: 3% 5% 0 5%;
+    margin: 0 1.75% 4vw;
+    gap: 2vw;
+    /* height: 60px; */
+}
+
+.nav-links li{
+    margin-left: 2%;
+}
+.nav-links a{
+    text-decoration: none;
+    /* color: whitesmoke; */
+}
+.nav-link-on{
+    color: var(--onLink);
+}
+.nav-links a:hover{
+    color: var(--onLink);
+}
+
+.nav-brand{
+    margin-right: auto;
+    font-weight: bold;
+}
+.nav-brand-short{
+    margin-right: auto;
+    font-weight: bold;
+    display: none;
+}
+@media screen and (max-width: 768px){
+    .nav-links{
+        gap: 1vw;
+        justify-content: center;
+        padding: 10% 6%;
+        margin: 0 1.75% 1vw;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 480px){
+    .nav-links{
+        margin: 0 1.75%;
+        justify-content: space-evenly;
+    }
+    .nav-links li{
+        text-align: center;
+        margin: 0;
+    }
+    .nav-brand{
+        display: none;
+    }
+    .nav-brand-short{
+        display: inline;
+    }
+
+}

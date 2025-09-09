@@ -6,9 +6,14 @@
     align-items: center;
     list-style: none;
     font-size: 1rem;
-    padding: 6% 11% 0 10%;
+    padding: 4% 3% 0 2%;
     margin: 0 1.75% 4vw;
     gap: 2vw;
+}
+.nav-brand-short{
+    margin-right: auto;
+    font-weight: bold;
+    display: none;
 }
 .nav-links li{
     margin-left: 2%;
@@ -39,12 +44,23 @@
 }
 @media screen and (max-width: 480px){
     .nav-links{
-        margin: 0 1.75%;
-        justify-content: space-evenly;
+        margin: 0;
+        padding: 10% 0 7% 0;
+        /* justify-content: space-evenly; */
+
+        /* justify-content: space-evenly; */
+        font-size: 0.9rem;
     }
     .nav-links li{
         text-align: center;
         margin: 0;
+        padding: 0 6% 0 6%;
+    }
+    .nav-brand{
+        display: none;
+    }
+    .nav-brand-short{
+        display: inline;
     }
 
 }

@@ -1,0 +1,33 @@
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.twoimgcomposition{
+    width: 44%;
+    height: auto;
+}
+
+.fourimgcomposition{
+    width: 22%;
+    height: auto;
+}
+
+.oneimgcomposition{
+    width: 89%;
+    height: auto;
+}
+@media screen and (max-width: 480px){
+    .flex-container{
+        gap: 2px;
+    }
+    .twoimgcomposition{
+        width: 49%;
+    }
+    .fourimgcomposition{
+        width: 24%;
+    }
+}

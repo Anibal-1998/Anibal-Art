@@ -8,17 +8,6 @@ nav.style.display = "none";
 main.style.display = "none";
 footer.style.display = "none";
 
-// addEventListener("load", () =>{
-//     nav.style.removeProperty("display");
-//     nav.animate(mainOpacity, mainOpacityTiming);
-
-//     main.style.removeProperty("display");
-//     main.animate(mainOpacity, mainOpacityTiming);
-
-//     footer.style.removeProperty("display");
-//     footer.animate(mainOpacity, mainOpacityTiming);
-// })
-
 window.onload = (e)=>{
     nav.style.removeProperty("display");
     nav.animate(mainOpacity, mainOpacityTiming);
@@ -29,3 +18,17 @@ window.onload = (e)=>{
     footer.style.removeProperty("display");
     footer.animate(mainOpacity, mainOpacityTiming);
 }
+// document.addEventListener("DOMContentLoaded", function () {
+//     const lebainImage = document.querySelector("#lebain img");
+
+//     const staticSrc = "./public/img/lebain/0_cover_lebain.jpg";
+//     const gifSrc = "./public/img/lebain/resized/Lebain-GIF.gif";
+
+//     lebainImage.addEventListener("mouseenter", function () {
+//       lebainImage.src = gifSrc;
+//     });
+
+//     lebainImage.addEventListener("mouseleave", function () {
+//       lebainImage.src = staticSrc;
+//     });
+// });

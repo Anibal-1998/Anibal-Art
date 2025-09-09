@@ -1,0 +1,30 @@
+/* Solo si quieres que la imagen empiece justo debajo del nav y rellene lo restante: */
+
+/* suponiendo que tu nav mide 60px de alto */
+/* Hero container con imagen de fondo */
+.hero-container{
+}
+.hero {
+  width: 100vw;
+  height: 100vh;                  
+  background-image: url(../public/img/home_dissection_desktop.jpg);
+  background-size: cover;
+  left: 50%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobile */
+@media screen and (max-width: 480px){
+  .hero{
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../public/img/home_dissection_phone.jpg);
+  }
+}
