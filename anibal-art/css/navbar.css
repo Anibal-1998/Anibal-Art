@@ -6,8 +6,8 @@
     align-items: center;
     list-style: none;
     font-size: 1rem;
-    padding: 4% 3% 0 2%;
-    margin: 0 1.75% 4vw;
+    padding: 4% 1% 0 0%;
+    margin: 0 1% 4vw 0%;
     gap: 2vw;
 }
 .nav-brand-short{
@@ -37,8 +37,8 @@
     .nav-links{
         gap: 1vw;
         justify-content: center;
-        padding: 10% 6%;
-        margin: 0 1.75% 1vw;
+        padding: 5% 1% 5% 0%;
+        margin: 0;
         overflow: hidden;
     }
 }
@@ -46,15 +46,15 @@
     .nav-links{
         margin: 0;
         padding: 10% 0 7% 0;
-        /* justify-content: space-evenly; */
+        justify-content: space-between;
 
         /* justify-content: space-evenly; */
         font-size: 0.9rem;
     }
     .nav-links li{
-        text-align: center;
-        margin: 0;
-        padding: 0 6% 0 6%;
+        /* text-align: center; */
+        margin: 0 0.6rem 0 0.6rem
+        /* padding: 0 6% 0 6%; */
     }
     .nav-brand{
         display: none;
