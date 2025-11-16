@@ -21,9 +21,20 @@
             <li><a href="./pages/about.html">ABOUT</a></li>
         </ul>
     </nav>
+   <div class="filters">
+      <ul class="filter-links">
+         <li><a href="#" class="active" data-filter="all">All</a></li>
+         <li><a href="#" data-filter="creative-direction">Creative Direction</a></li>
+         <li><a href="#" data-filter="visual-identity">Visual Identity</a></li>
+         <li><a href="#" data-filter="digital">Digital</a></li>
+         <li><a href="#" data-filter="fashion">Fashion</a></li>
+         <li><a href="#" data-filter="editorial">Editorial</a></li>
+         <li><a href="#" data-filter="art">Art</a></li>
+      </ul>
+   </div>
     <div class="wrapper">
         <main class="gallery">
-            <div class='galleryelement' id="8">
+            <div class='galleryelement' id="8" data-category="creative-direction editorial art">
                 <p class="text-above-image">
                    Por Amor Al Arte (A+C Studio)
                 </p>
@@ -37,7 +48,7 @@
                     <img src="./public/img/amor_al_arte/0_cover_por_amor_al_arte.jpg" alt="AMOR_AL_ARTE"/>
                 </a>
             </div>
-            <div class='galleryelement' id="1">
+            <div class='galleryelement' id="1" data-category="fashion">
                 <p class="text-above-image">
                    Fake Gods Brand
                 </p>
@@ -51,7 +62,7 @@
                     <img src="./public/img/fakegods/0_cover_gods.jpg" alt="FAKE GODS"/>
                 </a>
             </div>
-            <div class='galleryelement' id="2">
+            <div class='galleryelement' id="2" data-category="fashion">
                 <p class="text-above-image">
                    Nude Project
                 </p>
@@ -65,7 +76,7 @@
                     <img src="./public/img/nudeproject/0_cover_nude_project.jpg" alt="NUDE PROJECT"/>
                 </a>
             </div>
-            <div class='galleryelement' id="lebain" name="lebaingif">
+            <div class='galleryelement' id="lebain" name="lebaingif" data-category="creative-direction visual-identity">
                 <p class="text-above-image">
                    LeBain
                 </p>
@@ -79,7 +90,7 @@
                     <img src="./public/img/lebain/0_cover_lebain.jpg" name="lebaingif" alt="LEBAIN"/>
                 </a>
             </div>
-            <div class='galleryelement' id="4">
+            <div class='galleryelement' id="4" data-category="digital">
                 <p class="text-above-image">
                    Dissection
                 </p>
@@ -94,7 +105,7 @@
                     <img src="./public/img/dissection/0_cover_dissection.jpg" alt="DISSECTION"/>
                 </a>
             </div>
-            <div class='galleryelement' id="5">
+            <div class='galleryelement' id="5" data-category="digital">
                 <p class="text-above-image">
                    Northdeco
                 </p>
@@ -109,7 +120,7 @@
                     <img src="./public/img/northdeco/cover_northdeco.jpg" alt="NORTHDECO"/>
                 </a>
             </div>
-            <div class='galleryelement' id="6">
+            <div class='galleryelement' id="6" data-category="visual-identity digital">
                 <p class="text-above-image">
                    Tríptico
                 </p>
@@ -124,7 +135,7 @@
                     <img src="./public/img/triptico/0_cover_triptico.jpg" alt="TRÍPTICO FILM"/>
                 </a>
             </div>
-            <div class='galleryelement' id="7">
+            <div class='galleryelement' id="7" data-category="digital">
                 <p class="text-above-image">
                    Aristocrazy
                 </p>
@@ -161,5 +172,6 @@
     </footer>
     <script src="js/dontwastetime.js"></script>
     <script src="js/load.js"></script>
+    <script src="js/filters.js"></script>
 </body>
 </html>

@@ -5,6 +5,9 @@
     color: rgb(20, 20, 20);
     font-family: roboto, sans-serif;
 }
+:root {
+  --page-padding-x: 1.7rem;  /* aquí controlas cuánto se separa todo del borde izq/dcha */
+}
 body{
     background-color: whitesmoke;   
 }
@@ -21,4 +24,68 @@ body{
 }
 .on-link-with-hover:hover{
     color: var(--onLink);
+}
+
+.filters {
+    /*margin-top: 0.5rem;*/   /* muy pegado al nombre */
+    padding: 0;           /* sin padding que lo desplace */
+    margin-left: 1.9rem;    /* ajusta este valor para que alinee EXACTO con el nombre */
+    margin-bottom: 2.5rem;
+}
+.filter-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.filter-links li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 0.75rem;
+    font-family: inherit;
+}
+
+/* .filter-links li a:hover {
+    text-decoration: underline;
+} */
+
+.filter-links li a.active {
+    border-bottom: 1px solid #000;  /* marca el filtro activo */
+}
+
+
+@media (max-width: 768px) {
+    .nav {
+        padding: 1rem 1.25rem 0;
+    }
+
+    .filters {
+        padding: 0 1.25rem;    /* mismo valor que el nav para seguir alineado */
+        margin-top: 0.6rem;
+    }
+
+    .filter-links {
+        flex-wrap: wrap;       /* que pasen a varias líneas si hace falta */
+        row-gap: 0.4rem;
+    }
+}
+
+@media (max-width: 468px) {
+    .nav {
+        padding: 1rem 1.25rem 0;
+    }
+
+    .filters {
+        padding: 0 1.25rem;    /* mismo valor que el nav para seguir alineado */
+        margin-top: 0.6rem;
+    }
+
+    .filter-links {
+        flex-wrap: wrap;       /* que pasen a varias líneas si hace falta */
+        row-gap: 0.4rem;
+    }
 }
