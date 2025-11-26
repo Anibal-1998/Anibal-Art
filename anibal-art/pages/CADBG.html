@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <meta name=keywords content="Anibal Rodriguez,graphic,design,creative">
+    <link rel="icon" type="image/svg+xml" href="/public/img/web-ico-logo.png" />
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/works.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/cadbg.css">
+
+    <title>ANIBAL R. CANELA</title>
+</head>
+<body>
+    <nav class="nav">
+        <ul class='nav-links'>
+            <li class='nav-brand'><a href="#">ANIBAL RODRIGUEZ I CANELA</a></li>
+            <li class='nav-brand-short'><a href="#">ANIBAL</a></li>
+            <li><a href="../index.html">ARCHIVE</a></li>
+            <li><a href="#">CADBG</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+        </ul>
+    </nav>
+   <div class="filters">
+      <ul class="filter-links">
+         <li><a href="#" class="active" data-filter="all">All</a></li>
+         <li><a href="#" data-filter="grafico">Gráfico</a></li>
+         <li><a href="#" data-filter="visual-identity">Visual Identity</a></li>
+         <li><a href="#" data-filter="digital">Digital</a></li>
+         <li><a href="#" data-filter="fashion">Fashion</a></li>
+         <li><a href="#" data-filter="editorial">Editorial</a></li>
+         <li><a href="#" data-filter="art">Art</a></li>
+      </ul>
+   </div>
+
+    <div class="wrapper">
+        <main class="gallery">
+            <div class='galleryelement' id="8" data-category="creative-direction editorial art">
+                <p class="text-above-image">
+                   50 Tangos Inolvidables, Por Carlos Acuña, Direct Mailing S.A. 
+                </p>
+                <p class="text-above-image">
+                   Servicios a Distancia, 1990 SERDISCO
+                </p>
+                <p class="text-above-image">
+                   Gráfico
+                </p>
+                <img 
+                    src="../public/img/cadbg/1/1.jpg" 
+                    alt="Imagen Principal"
+                    class="carrousel-thumb"
+                    data-folder="../public/img/cadbg/1"
+                    data-files='["1.jpg"]'
+                />
+            </div>
+            <div class='galleryelement' id="7" data-category="creative-direction editorial art">
+                <p class="text-above-image">
+                   50 Tangos Inolvidables, Por Carlos Acuña, Direct Mailing S.A. 
+                </p>
+                <p class="text-above-image">
+                   Servicios a Distancia, 1990 SERDISCO
+                </p>
+                <p class="text-above-image">
+                   Gráfico
+                </p>
+                <img 
+                    src="../public/img/cadbg/2/2_1.jpg" 
+                    alt="Imagen Principal"
+                    class="carrousel-thumb"
+                    data-folder="../public/img/cadbg/2"
+                    data-files='["2_1.jpg","2_2.jpg","2_3.jpg"]',
+                    data-title="50 Tangos Inolvidables, Por Carlos Acuña, Direct Mailing S.A. Servicios a Distancia, 1990 SERDISCO Gráfico" 
+                />
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal para pasar de imagen -->
+    <div class="modal" id="modal">
+        <span class="close" id="close">&times;</span>
+        <span class="prev" id="prev">&#10094;</span>
+
+        <div class="modal-title" id="modalTitle"></div>
+
+        <img id="modalImage" src="" alt="Imagen Modal">
+
+        <span class="next" id="next">&#10095;</span>
+    </div>
+
+    <footer class='footer'>
+        <div class="footer-left">
+          <p>&copy;1998 - Present </p>
+          <p>All Rights Reserved</p>
+        </div>
+        <div class="footer-center">
+          <p><a href="https://www.instagram.com/anibal_h5/" target="_blank">Instagram</a></p>
+          <p><a href="https://www.linkedin.com/in/anibal-rodriguez-canela/" target="_blank">Linkedin</a></p>
+        </div>
+        <div class="footer-center">
+          <p> Don't waste </p>
+          <p>time <span id="hour-now"></span></p>
+        </div>
+        <div class="footer-right">
+          <p>Web design </p>
+          <p>by <a href="https://www.linkedin.com/in/d-aguero/">Diego Aguero</a></p>
+        </div>
+    </footer>
+    <script src="../js/dontwastetime.js"></script>
+    <script src="../js/load.js"></script>
+    <script src="../js/filters.js"></script>
+    <script src="../js/carouselCADBG.js"></script>
+</body>
+</html>
