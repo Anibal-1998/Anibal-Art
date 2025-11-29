@@ -1,12 +1,12 @@
-const thumbs = document.querySelectorAll(".carrousel-thumb");
-const modal = document.getElementById('modal');
-const modalImage = document.getElementById('modalImage');
-const closeBtn = document.getElementById('close');
-const prevBtn = document.getElementById('prev');
-const nextBtn = document.getElementById('next');
+// const thumbs = document.querySelectorAll(".carrousel-thumb");
+// const modal = document.getElementById('modal');
+// const modalImage = document.getElementById('modalImage');
+// const closeBtn = document.getElementById('close');
+// const prevBtn = document.getElementById('prev');
+// const nextBtn = document.getElementById('next');
 
-let images = [];
-let currentIndex = 0;
+// let images = [];
+// let currentIndex = 0;
 
 // Cada imagen puede tener su propio set de fotos
 // thumbs.forEach((thumb) => {
@@ -22,44 +22,99 @@ let currentIndex = 0;
 //         modalImage.src = images[currentIndex];
 //     });
 // });
-thumbs.forEach((thumb) => {
-    thumb.addEventListener("click", () => {
+// thumbs.forEach((thumb) => {
+//     thumb.addEventListener("click", () => {
 
-        const folder = thumb.dataset.folder;
-        const files = JSON.parse(thumb.dataset.files);
+//         const folder = thumb.dataset.folder;
+//         const files = JSON.parse(thumb.dataset.files);
 
-        images = files.map(file => `${folder}/${file}`);
-        currentIndex = 0;
+//         images = files.map(file => `${folder}/${file}`);
+//         currentIndex = 0;
 
-        // Texto del título
-        document.getElementById("modalTitle").textContent = thumb.dataset.title || "";
+//         // Texto del título
+//         document.getElementById("modalTitle").textContent = thumb.dataset.title || "";
 
-        modal.style.display = "flex";
-        modalImage.src = images[currentIndex];
+//         modal.style.display = "flex";
+//         modalImage.src = images[currentIndex];
+//     });
+// });
+
+// // Cerrar modal
+// closeBtn.addEventListener("click", () => {
+//     modal.style.display = "none";
+// });
+
+// // Imagen anterior
+// prevBtn.addEventListener("click", () => {
+//     currentIndex = (currentIndex - 1 + images.length) % images.length;
+//     modalImage.src = images[currentIndex];
+// });
+
+// // Imagen siguiente
+// nextBtn.addEventListener("click", () => {
+//     currentIndex = (currentIndex + 1) % images.length;
+//     modalImage.src = images[currentIndex];
+// });
+
+// // Cerrar clickeando afuera
+// modal.addEventListener("click", (e) => {
+//     if (e.target === modal) {
+//         modal.style.display = "none";
+//     }
+// });
+
+const modal = document.getElementById("modal");
+const modalImage = document.getElementById("modalImage");
+const modalTitle = document.getElementById("modalTitle");
+
+let currentIndex = 0;
+
+// 1️⃣ Construir lista global
+const allImages = [];
+const imageInfo = []; // Para títulos si quieres
+
+document.querySelectorAll(".carrousel-thumb").forEach(img => {
+    const folder = img.dataset.folder;
+    const files = JSON.parse(img.dataset.files);
+    console.log(files)
+    files.forEach(file => {
+        allImages.push(`${folder}/${file}`);
+        imageInfo.push(img.dataset.title || "");
     });
 });
 
-// Cerrar modal
-closeBtn.addEventListener("click", () => {
+// 2️⃣ Abrir modal con imagen clickeada
+document.querySelectorAll(".carrousel-thumb").forEach(img => {
+    img.addEventListener("click", e => {
+        const folder = img.dataset.folder;
+        const files = JSON.parse(img.dataset.files);
+
+        currentIndex = allImages.indexOf(`${folder}/${files[0]}`);
+
+        modalImage.src = allImages[currentIndex];
+        modalTitle.textContent = imageInfo[currentIndex] || "";
+        modal.style.display = "flex";   // IMPORTANTE
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+    });
+});
+
+// 3️⃣ Navegación global
+document.getElementById("next").onclick = () => {
+    currentIndex = (currentIndex + 1) % allImages.length;
+    modalImage.src = allImages[currentIndex];
+    modalTitle.textContent = imageInfo[currentIndex];
+};
+
+document.getElementById("prev").onclick = () => {
+    currentIndex = (currentIndex - 1 + allImages.length) % allImages.length;
+    modalImage.src = allImages[currentIndex];
+    modalTitle.textContent = imageInfo[currentIndex];
+};
+
+// 4️⃣ Cerrar modal
+document.getElementById("close").onclick = () => {
+    document.body.style.backgroundColor = "";
+    document.body.style.color = "";
     modal.style.display = "none";
-});
-
-// Imagen anterior
-prevBtn.addEventListener("click", () => {
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
-    modalImage.src = images[currentIndex];
-});
-
-// Imagen siguiente
-nextBtn.addEventListener("click", () => {
-    currentIndex = (currentIndex + 1) % images.length;
-    modalImage.src = images[currentIndex];
-});
-
-// Cerrar clickeando afuera
-modal.addEventListener("click", (e) => {
-    if (e.target === modal) {
-        modal.style.display = "none";
-    }
-});
-
+};
