@@ -27,9 +27,9 @@ body{
 }
 
 .filters {
-    /*margin-top: 0.5rem;*/   /* muy pegado al nombre */
-    padding: 0;           /* sin padding que lo desplace */
-    margin-left: 1.9rem;    /* ajusta este valor para que alinee EXACTO con el nombre */
+    /*margin-top: 0.5rem;*/ 
+    padding: 0;             
+    margin-left: 1.9rem;    
     margin-bottom: 2.5rem;
 }
 .filter-links {
@@ -49,12 +49,9 @@ body{
     font-family: inherit;
 }
 
-/* .filter-links li a:hover {
-    text-decoration: underline;
-} */
 
 .filter-links li a.active {
-    border-bottom: 1px solid #000;  /* marca el filtro activo */
+    border-bottom: 1px solid #000 !important;
 }
 
 

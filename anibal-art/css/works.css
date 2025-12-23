@@ -50,6 +50,14 @@
 .galleryelement > p.text-above-image:last-of-type{
   margin-bottom: 1.2rem;
 }
+.galleryelement > p > a{
+  text-decoration: none;
+  color: rgb(114, 113, 113);
+}
+.galleryelement > p > a.active{
+  color: black;
+  border-bottom: 1px solid #000 !important;
+}
 @media screen and (max-width: 768px){
     .gallery{
       grid-template-columns: repeat(2, 1fr);

@@ -69,9 +69,8 @@ const modalTitle = document.getElementById("modalTitle");
 
 let currentIndex = 0;
 
-// 1️⃣ Construir lista global
 const allImages = [];
-const imageInfo = []; // Para títulos si quieres
+const imageInfo = []; 
 
 document.querySelectorAll(".carrousel-thumb").forEach(img => {
     const folder = img.dataset.folder;
@@ -83,7 +82,6 @@ document.querySelectorAll(".carrousel-thumb").forEach(img => {
     });
 });
 
-// 2️⃣ Abrir modal con imagen clickeada
 document.querySelectorAll(".carrousel-thumb").forEach(img => {
     img.addEventListener("click", e => {
         const folder = img.dataset.folder;
@@ -93,7 +91,7 @@ document.querySelectorAll(".carrousel-thumb").forEach(img => {
 
         modalImage.src = allImages[currentIndex];
         modalTitle.textContent = imageInfo[currentIndex] || "";
-        modal.style.display = "flex";   // IMPORTANTE
+        modal.style.display = "flex";   
         document.body.style.backgroundColor = "black";
         document.body.style.color = "white";
     });
