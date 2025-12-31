@@ -1,0 +1,45 @@
+/* Contenedor principal */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Creamos dos columnas iguales */
+    gap: 15px;                      /* Espacio entre imágenes */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Configuramos todas las imágenes para que sean responsivas */
+main img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Reordenamiento visual mediante :nth-child */
+
+/* Imagen 1 (1º en HTML) -> Posición 1 (arriba izquierda) */
+main img:nth-child(1) { 
+    order: 1; 
+}
+
+/* Imagen 3 (2º en HTML) -> Posición 2 (arriba derecha) */
+main img:nth-child(2) { 
+    order: 2; 
+}
+
+/* Imagen 2 (3º en HTML) -> Posición 3 (abajo izquierda) */
+main img:nth-child(3) { 
+    order: 3; 
+}
+
+/* Imagen 4 (4º en HTML) -> Posición 4 (abajo derecha) */
+main img:nth-child(4) { 
+    order: 4; 
+}
+
+/* Imagen 5 (5º en HTML) -> Abajo del todo ocupando ambas columnas */
+main img:nth-child(5) { 
+    order: 5;
+    grid-column: 1 / span 2; /* Ocupa las dos columnas */
+}

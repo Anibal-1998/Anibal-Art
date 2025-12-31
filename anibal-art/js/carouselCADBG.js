@@ -66,6 +66,7 @@
 const modal = document.getElementById("modal");
 const modalImage = document.getElementById("modalImage");
 const modalTitle = document.getElementById("modalTitle");
+const downloadLink = document.getElementById("download");
 
 let currentIndex = 0;
 
@@ -94,6 +95,12 @@ document.querySelectorAll(".carrousel-thumb").forEach(img => {
         modal.style.display = "flex";   
         document.body.style.backgroundColor = "black";
         document.body.style.color = "white";
+        // update download link (native download attribute)
+        if (downloadLink) {
+            downloadLink.href = modalImage.src;
+            // set a filename for download (basename of src)
+            try { downloadLink.download = modalImage.src.split('/').pop(); } catch(e){}
+        }
     });
 });
 
@@ -102,17 +109,35 @@ document.getElementById("next").onclick = () => {
     currentIndex = (currentIndex + 1) % allImages.length;
     modalImage.src = allImages[currentIndex];
     modalTitle.textContent = imageInfo[currentIndex];
+    if (downloadLink) {
+        downloadLink.href = modalImage.src;
+        try { downloadLink.download = modalImage.src.split('/').pop(); } catch(e){}
+    }
 };
 
 document.getElementById("prev").onclick = () => {
     currentIndex = (currentIndex - 1 + allImages.length) % allImages.length;
     modalImage.src = allImages[currentIndex];
     modalTitle.textContent = imageInfo[currentIndex];
+    if (downloadLink) {
+        downloadLink.href = modalImage.src;
+        try { downloadLink.download = modalImage.src.split('/').pop(); } catch(e){}
+    }
 };
 
 // 4️⃣ Cerrar modal
-document.getElementById("close").onclick = () => {
+function closeModal(){
     document.body.style.backgroundColor = "";
     document.body.style.color = "";
     modal.style.display = "none";
-};
+}
+
+document.getElementById("close").onclick = closeModal;
+
+// cerrar clicando fuera de la imagen (overlay)
+if (modal) {
+    modal.addEventListener('click', function(e){
+        // si el target es exactamente el overlay (modal) y no los controles o la imagen
+        if (e.target === modal) closeModal();
+    });
+}
