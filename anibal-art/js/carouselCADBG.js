@@ -95,16 +95,14 @@ document.querySelectorAll(".carrousel-thumb").forEach(img => {
         modal.style.display = "flex";   
         document.body.style.backgroundColor = "black";
         document.body.style.color = "white";
-        // update download link (native download attribute)
+        // intento de link de descarga
         if (downloadLink) {
             downloadLink.href = modalImage.src;
-            // set a filename for download (basename of src)
             try { downloadLink.download = modalImage.src.split('/').pop(); } catch(e){}
         }
     });
 });
 
-// 3️⃣ Navegación global
 document.getElementById("next").onclick = () => {
     currentIndex = (currentIndex + 1) % allImages.length;
     modalImage.src = allImages[currentIndex];
@@ -125,7 +123,6 @@ document.getElementById("prev").onclick = () => {
     }
 };
 
-// 4️⃣ Cerrar modal
 function closeModal(){
     document.body.style.backgroundColor = "";
     document.body.style.color = "";
