@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap";
 
 .galleryelement{
     max-width: 100%;
@@ -43,7 +43,9 @@
     min-height: 35vh;
 }
 .text-above-image{
-  color: rgb(114, 113, 113);
+
+  color: #adacac;
+  /* color: rgb(114, 113, 113); */
   margin: 0;
   font-size: 0.8rem;
 }
@@ -52,7 +54,8 @@
 }
 .galleryelement > p > a{
   text-decoration: none;
-  color: rgb(114, 113, 113);
+  /* color: #adacac; */
+  /* color: rgb(114, 113, 113); */
 }
 .galleryelement > p > a.active{
   color: black;

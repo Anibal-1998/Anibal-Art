@@ -1,12 +1,13 @@
-@import "https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap";
 * {
     --onLink: #f55314;
     --alturaMain: 100vw;
-    color: rgb(20, 20, 20);
+    /* color: rgb(20, 20, 20); */
+    color: #adacac;
     font-family: roboto, sans-serif;
 }
 :root {
-  --page-padding-x: 1.7rem;  /* aquí controlas cuánto se separa todo del borde izq/dcha */
+  --page-padding-x: 1.7rem; 
 }
 body{
     background-color: whitesmoke;   
@@ -19,7 +20,9 @@ body{
     color: var(--onLink);
 }
 .on-link-with-hover{
-    color: black;
+    color: #adacac;
+
+    /* color: black; */
     text-decoration: none;
 }
 .on-link-with-hover:hover{
@@ -51,6 +54,7 @@ body{
 
 
 .filter-links li a.active {
+    color:#000;
     border-bottom: 1px solid #000 !important;
 }
 
@@ -61,12 +65,12 @@ body{
     }
 
     .filters {
-        padding: 0 1.25rem;    /* mismo valor que el nav para seguir alineado */
+        padding: 0 1.25rem;    
         margin-top: 0.6rem;
     }
 
     .filter-links {
-        flex-wrap: wrap;       /* que pasen a varias líneas si hace falta */
+        flex-wrap: wrap;       
         row-gap: 0.4rem;
     }
 }
@@ -77,12 +81,12 @@ body{
     }
 
     .filters {
-        padding: 0 1.25rem;    /* mismo valor que el nav para seguir alineado */
+        padding: 0 1.25rem;    
         margin-top: 0.6rem;
     }
 
     .filter-links {
-        flex-wrap: wrap;       /* que pasen a varias líneas si hace falta */
+        flex-wrap: wrap;       
         row-gap: 0.4rem;
     }
 }

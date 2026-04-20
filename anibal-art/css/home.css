@@ -1,9 +1,5 @@
-/* Solo si quieres que la imagen empiece justo debajo del nav y rellene lo restante: */
-
-/* suponiendo que tu nav mide 60px de alto */
 /* Hero container con imagen de fondo */
-.hero-container{
-}
+/* En algun futuro, esto se utilizara*/
 .hero {
   width: 100vw;
   height: 100vh;                  

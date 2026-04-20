@@ -97,7 +97,7 @@
     max-width: 90%;
 }
 
-/* 🔥 Página oscura mientras el modal está abierto
+/* Página oscura mientras el modal está abierto
 body.modal-open {
     background: black !important;
     color: white !important;
